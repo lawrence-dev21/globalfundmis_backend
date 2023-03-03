@@ -91,6 +91,14 @@
       "relation": "manyToOne",
       "target": "api::school.school",
       "inversedBy": "users"
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
     }
   }
 }
