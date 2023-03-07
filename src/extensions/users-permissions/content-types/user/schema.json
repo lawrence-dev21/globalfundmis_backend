@@ -84,7 +84,7 @@
       "default": "2000-01-01"
     },
     "avatar": {
-      "type": "string"
+      "type": "text"
     },
     "school": {
       "type": "relation",
