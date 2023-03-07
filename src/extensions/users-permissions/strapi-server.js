@@ -7,6 +7,7 @@ module.exports = plugin => {
       return sanitizedUser;
     };
   
+
     plugin.controllers.user.me = async (ctx) => {
       if (!ctx.state.user) {
         return ctx.unauthorized();
@@ -23,7 +24,7 @@ module.exports = plugin => {
     plugin.controllers.user.find = async (ctx) => {
       const users = await strapi.entityService.findMany(
         'plugin::users-permissions.user',
-        { ...ctx.params, populate: ['role', 'avatar'] }
+        { ...ctx.params, populate: ['role', 'avatar', 'school'] }
       );
   
       ctx.body = users.map(user => sanitizeOutput(user));
