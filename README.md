@@ -1,57 +1,45 @@
-# 🚀 Getting started with Strapi
+# GFMIS Backend
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-### `develop`
+This is the backend api for the gfmis system
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
-```
-npm run develop
-# or
-yarn develop
-```
+TODO
 
-### `start`
+1. Define roles
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Provincial/HQ -> Look at data
 
-```
-npm run start
-# or
-yarn start
-```
+District
+District Admin
+- On the ground
+- Planner: data entry for beneficiaries
+- Staticians:
+School Level
 
-### `build`
+School Admin/HeadTeacher
+School Teacher
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-```
-npm run build
-# or
-yarn build
-```
+2. Enhance CSE class
 
-## ⚙️ Deployment
+    - Measure the impact of the CSE club.
+    - enhance Students Enrollment
+    - enhance students table 
+    - email notificaions 
+    - app notifications
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+3. Hosting strapi online
+    - Migration of the DB to MSSQL
+    - Creation of a docker composition file
 
-## 📚 Learn more
+3. Enhance the beneficiries table 
+    - Develop a workflow
+    - School -> Planner -> notification 
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+4. Location filtering
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
 
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+5. Add learners module
+- Enroll students
+- 
