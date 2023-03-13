@@ -36,6 +36,12 @@
       "relation": "manyToOne",
       "target": "api::grade.grade",
       "inversedBy": "students"
+    },
+    "attendence": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::attendence.attendence",
+      "inversedBy": "students"
     }
   }
 }
