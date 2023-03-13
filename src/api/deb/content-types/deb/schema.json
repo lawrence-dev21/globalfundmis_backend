@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "debs",
+  "info": {
+    "singularName": "deb",
+    "pluralName": "debs",
+    "displayName": "Deb"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "district": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::district.district"
+    }
+  }
+}
