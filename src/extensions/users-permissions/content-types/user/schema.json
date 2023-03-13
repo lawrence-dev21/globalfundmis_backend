@@ -99,6 +99,12 @@
     "lastName": {
       "type": "string",
       "required": true
+    },
+    "deb": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::deb.deb",
+      "inversedBy": "officers"
     }
   }
 }

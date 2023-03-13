@@ -4,7 +4,8 @@
   "info": {
     "singularName": "deb",
     "pluralName": "debs",
-    "displayName": "Deb"
+    "displayName": "Deb",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::district.district"
+    },
+    "officers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "deb"
     }
   }
 }
