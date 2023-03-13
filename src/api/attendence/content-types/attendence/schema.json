@@ -4,7 +4,8 @@
   "info": {
     "singularName": "attendence",
     "pluralName": "attendences",
-    "displayName": "Attendence"
+    "displayName": "Attendence",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,6 +31,11 @@
       "relation": "oneToMany",
       "target": "api::teacher.teacher",
       "mappedBy": "attendence"
+    },
+    "cse_topic": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cse-topic.cse-topic"
     }
   }
 }

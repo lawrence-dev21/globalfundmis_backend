@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::teacher.teacher",
       "inversedBy": "grades"
+    },
+    "module": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::module.module",
+      "inversedBy": "grades"
     }
   }
 }

@@ -22,6 +22,12 @@
       "relation": "manyToOne",
       "target": "api::teacher.teacher",
       "inversedBy": "cses"
+    },
+    "cse_topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cse-topic.cse-topic",
+      "mappedBy": "cse"
     }
   }
 }
