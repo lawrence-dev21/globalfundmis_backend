@@ -16,6 +16,12 @@
       "relation": "manyToOne",
       "target": "api::school.school",
       "inversedBy": "cses"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher",
+      "inversedBy": "cses"
     }
   }
 }

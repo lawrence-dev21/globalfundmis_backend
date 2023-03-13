@@ -30,6 +30,12 @@
       "relation": "manyToOne",
       "target": "api::parent.parent",
       "inversedBy": "students"
+    },
+    "grade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade.grade",
+      "inversedBy": "students"
     }
   }
 }
