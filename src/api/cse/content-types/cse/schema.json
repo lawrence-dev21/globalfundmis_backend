@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cses",
+  "info": {
+    "singularName": "cse",
+    "pluralName": "cses",
+    "displayName": "CSE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "cses"
+    }
+  }
+}

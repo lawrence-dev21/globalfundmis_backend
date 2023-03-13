@@ -4,7 +4,8 @@
   "info": {
     "singularName": "school",
     "pluralName": "schools",
-    "displayName": "School"
+    "displayName": "School",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,12 +22,24 @@
       "required": true
     },
     "avatar": {
-      "type": "string"
+      "type": "text"
     },
     "users": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
+      "mappedBy": "school"
+    },
+    "district": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::district.district",
+      "inversedBy": "schools"
+    },
+    "cses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cse.cse",
       "mappedBy": "school"
     }
   }

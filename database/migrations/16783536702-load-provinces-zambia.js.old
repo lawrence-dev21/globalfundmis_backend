@@ -1,0 +1,18 @@
+'use strict'
+const fs = require('fs');
+const data = JSON.parse(fs.readFileSync('./database/migrations/provinces.json', 'utf8'));
+async function up(knex) {
+    const provinceIds = await knex("provinces").insert(data.map(({ name }) => ({ name })));
+    console.log(provinceIds)
+    // Insert districts
+    const districts = data.flatMap(({ districts }, index) =>
+      districts.map(district => ({
+        name: district,
+        province_id: provinceIds[index]
+      }))
+    );
+    await knex("districts").insert(districts);
+}
+
+module.exports = { up };
+

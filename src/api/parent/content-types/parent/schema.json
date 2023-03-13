@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parents",
+  "info": {
+    "singularName": "parent",
+    "pluralName": "parents",
+    "displayName": "Parent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "students": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student.student",
+      "mappedBy": "parent"
+    }
+  }
+}
