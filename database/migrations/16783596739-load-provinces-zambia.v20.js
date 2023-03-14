@@ -8,13 +8,18 @@ async function up(knex) {
     for (let province of data) {
       const [provinceId] = await knex("provinces").insert({
         name: province.name,
-      });
-
-      const districts = province.districts.map((district) => {
-        return { name: district };
+        created_at: Date.now(),
+        updated_at: Date.now(),
+        published_at: Date.now()
       });
       for (let [index, district] of province.districts.entries()) {
-        const [districtId] = await knex("districts").insert({ name: district });
+        const [districtId] = await knex("districts").insert(
+          { 
+            name: district,
+            created_at: Date.now(),
+            updated_at: Date.now(),
+            published_at: Date.now(),
+           });
         const districtProvinceLink = {
           district_id: districtId,
           province_id: provinceId,
