@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cse",
     "pluralName": "cses",
-    "displayName": "CSE"
+    "displayName": "CSE",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,12 @@
       "relation": "oneToMany",
       "target": "api::cse-topic.cse-topic",
       "mappedBy": "cse"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
     }
   }
 }
