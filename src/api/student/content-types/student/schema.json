@@ -42,6 +42,12 @@
       "relation": "manyToOne",
       "target": "api::attendence.attendence",
       "inversedBy": "students"
+    },
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "students"
     }
   }
 }

@@ -41,6 +41,12 @@
       "relation": "oneToMany",
       "target": "api::cse.cse",
       "mappedBy": "school"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student.student",
+      "mappedBy": "school"
     }
   }
 }
