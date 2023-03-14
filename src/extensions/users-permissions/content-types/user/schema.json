@@ -105,6 +105,9 @@
       "relation": "manyToOne",
       "target": "api::deb.deb",
       "inversedBy": "officers"
+    },
+    "mobile": {
+      "type": "string"
     }
   }
 }
