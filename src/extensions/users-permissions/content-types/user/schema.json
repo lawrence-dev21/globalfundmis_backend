@@ -108,6 +108,12 @@
     },
     "mobile": {
       "type": "string"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::parent.parent",
+      "inversedBy": "user"
     }
   }
 }
