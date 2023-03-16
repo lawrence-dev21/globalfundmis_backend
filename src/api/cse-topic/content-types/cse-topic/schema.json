@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cse-topic",
     "pluralName": "cse-topics",
-    "displayName": "CSE-Topic"
+    "displayName": "CSE-Topic",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,9 +18,9 @@
     "description": {
       "type": "text"
     },
-    "cse": {
+    "cses": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::cse.cse",
       "inversedBy": "cse_topics"
     },

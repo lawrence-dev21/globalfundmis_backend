@@ -48,6 +48,12 @@
       "relation": "manyToOne",
       "target": "api::school.school",
       "inversedBy": "students"
+    },
+    "cse": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cse.cse",
+      "inversedBy": "students"
     }
   }
 }
