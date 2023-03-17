@@ -36,6 +36,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::cse-topic.cse-topic"
+    },
+    "cse": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cse.cse",
+      "inversedBy": "attendances"
     }
   }
 }

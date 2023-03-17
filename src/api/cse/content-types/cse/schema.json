@@ -49,6 +49,12 @@
       "relation": "manyToMany",
       "target": "api::cse-topic.cse-topic",
       "mappedBy": "cses"
+    },
+    "attendances": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attendence.attendence",
+      "mappedBy": "cse"
     }
   }
 }
