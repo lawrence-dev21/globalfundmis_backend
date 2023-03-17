@@ -24,17 +24,31 @@
       "target": "api::teacher.teacher",
       "inversedBy": "cses"
     },
-    "cse_topics": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::cse-topic.cse-topic",
-      "mappedBy": "cse"
-    },
     "startDate": {
       "type": "date"
     },
     "endDate": {
       "type": "date"
+    },
+    "grades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::grade.grade"
+    },
+    "name": {
+      "type": "string"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student.student",
+      "mappedBy": "cse"
+    },
+    "cse_topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cse-topic.cse-topic",
+      "mappedBy": "cses"
     }
   }
 }
