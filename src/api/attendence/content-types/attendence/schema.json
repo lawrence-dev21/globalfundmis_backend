@@ -21,11 +21,6 @@
       "target": "api::student.student",
       "mappedBy": "attendence"
     },
-    "school": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::school.school"
-    },
     "teachers": {
       "type": "relation",
       "relation": "oneToMany",
