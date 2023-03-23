@@ -20,6 +20,7 @@ module.exports = plugin => {
   
       ctx.body = sanitizeOutput(user);
     };
+    
   
     plugin.controllers.user.find = async (ctx) => {
       const users = await strapi.entityService.findMany(
@@ -31,6 +32,18 @@ module.exports = plugin => {
       );
   
       ctx.body = users.map(user => sanitizeOutput(user));
+    };
+  
+    plugin.controllers.role.find = async (ctx) => {
+      const roles = await strapi.entityService.findMany(
+        'plugin::users-permissions.role',
+        { 
+          ...ctx.params,
+          ...ctx.query,
+         }
+      );
+  
+      ctx.body = roles.map(role => sanitizeOutput(role));
     };
   
     return plugin;
