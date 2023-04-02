@@ -15,7 +15,7 @@ module.exports = createCoreController('api::student.student', ({strapi}) => ({
         // we need to find the student role
         const studentRole = await strapi.db.query('plugin::users-permissions.role').findOne({
           where: {
-            name: 'student'
+            name: 'Student'
           } 
          });
         const studentUser = await strapi.db.query('plugin::users-permissions.user').create({
@@ -41,7 +41,7 @@ module.exports = createCoreController('api::student.student', ({strapi}) => ({
         const { parentUserExists, parentExists, parentAddress, parentFirstName, parentLastName, parentMobile, parentNRC } = ctx.request.body.data;
         const parentRole = await strapi.db.query('plugin::users-permissions.role').findOne({
           where: {
-            name: 'parent'
+            name: 'Parent'
           } 
          });
 
