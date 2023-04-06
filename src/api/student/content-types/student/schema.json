@@ -54,6 +54,12 @@
       "relation": "manyToOne",
       "target": "api::cse.cse",
       "inversedBy": "students"
+    },
+    "transfers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::transfer.transfer",
+      "mappedBy": "students"
     }
   }
 }
