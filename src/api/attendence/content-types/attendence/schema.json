@@ -17,9 +17,9 @@
     },
     "students": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::student.student",
-      "mappedBy": "attendence"
+      "mappedBy": "attendences"
     },
     "teachers": {
       "type": "relation",

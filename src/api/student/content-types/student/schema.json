@@ -37,12 +37,6 @@
       "target": "api::grade.grade",
       "inversedBy": "students"
     },
-    "attendence": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::attendence.attendence",
-      "inversedBy": "students"
-    },
     "school": {
       "type": "relation",
       "relation": "manyToOne",
@@ -60,6 +54,12 @@
       "relation": "manyToMany",
       "target": "api::transfer.transfer",
       "mappedBy": "students"
+    },
+    "attendences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::attendence.attendence",
+      "inversedBy": "students"
     }
   }
 }
