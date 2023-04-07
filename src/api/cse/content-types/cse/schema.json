@@ -40,9 +40,9 @@
     },
     "students": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::student.student",
-      "mappedBy": "cse"
+      "mappedBy": "cses"
     },
     "cse_topics": {
       "type": "relation",
